@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="{i18n>RequestTite}">
+		<f:SimpleForm>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<VBox>
+						<FlexBox>
+							<Label text="{i18n>RequestEmpiId}"/>
+							<Text id="RequestEmpiId"/>
+						</FlexBox>
+						<FlexBox>
+							<Label text="{i18n>RequestEmpName}"/>
+							<Text id="RequestEmpNameId"/>
+						</FlexBox>
+						<FlexBox>
+							<Label text="{i18n>RequestFile}"/>
+							<Text id="RequestFileId"/>
+						</FlexBox>
+						<u:FileUploader id="RequestFileUploader"/>
+						<Button text="{i18n>RequestUplad}" press="onUploadFile" width="100%"/>
+						<Toolbar height="1px"/>
+						<Toolbar design="Info" width="100%">
+							<Button text="Send" width="150%" type="Accept" press="onRequestFileSend"/>
+							<Button text="Close" width="150%" press="onCloseRequestFragment"></Button>
+						</Toolbar>
+					</VBox>
+				</l:content>
+			</l:VerticalLayout>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>

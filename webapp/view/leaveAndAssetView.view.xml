@@ -1,0 +1,133 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m"
+	controllerName="MT.SMT_Managment.controller.leaveAndAssetView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page>
+				<headerContent>
+					<Toolbar id="idDetailPage" width="100%">
+						<!--<Button type="Transparent" icon="sap-icon://nav-back" press="onPressLogout" class="floatLeft"/>-->
+						<ToolbarSpacer/>
+						<SearchField liveChange="onSearch" placeholder="Search leave by reasion" width="30%"/>
+					</Toolbar>
+				</headerContent>
+				<content>
+					<IconTabBar id="idIconTabBarNoIcons" class="sapUiResponsiveContentPadding leftPadding" expanded="true">
+						<items>
+							<IconTabFilter class="leftPadding" text="{i18n>LeavePageLeave}">
+								<Table id="idLeaveTable" inset="false" items="{DOB>/Leave}">
+									<infoToolbar>
+										<OverflowToolbar>
+											<Label text="{i18n>LeaveRequestespageLeaveRequeste}"/>
+										</OverflowToolbar>
+									</infoToolbar>
+									<columns>
+										<Column width="12em">
+											<Text text="{i18n>LeaveRequestespageEmployeeID}"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="{i18n>LeaveRequestespageReason}"/>
+										</Column>
+										<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+											<Text text="{i18n>LeaveRequestespageFromdate}"/>
+										</Column>
+										<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+											<Text text="{i18n>LeaveRequestespageTodate}"/>
+										</Column>
+										<Column hAlign="End">
+											<Text text="{i18n>LeaveRequestespageStatus}"/>
+										</Column>
+									</columns>
+									<items >
+										<ColumnListItem type="Navigation" press="onPressLeaveApprovel">
+											<cells>
+												<Text text="{DOB>empId}"/>
+												<Text text="{DOB>Reason}"/>
+												<Text text="{DOB>Fdate}"/>
+												<Text text="{DOB>Tdate}"/>
+												<Text text="{DOB>Status}"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</IconTabFilter>
+							<IconTabFilter class="leftPadding" text="{i18n>LeavePageAsset}">
+								<Table id="idAssetsTable" inset="false" items="{DOB>/Asset}">
+									<infoToolbar>
+										<OverflowToolbar>
+											<Label text="{i18n>LeavePageAssetrequestes}"/>
+										</OverflowToolbar>
+									</infoToolbar>
+									<columns>
+										<Column width="12em">
+											<Text text="{i18n>LeaveRequestespageEmployeeID}"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="{i18n>LeaveRequestespageAssetID}"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="{i18n>LeaveRequestespageAssetName}"/>
+										</Column>
+										<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+											<Text text="{i18n>LeaveRequestespageAssetdate}"/>
+										</Column>
+										<Column hAlign="End">
+											<Text text="{i18n>LeaveRequestespageStatus}"/>
+										</Column>
+									</columns>
+									<items >
+										<ColumnListItem type="Navigation" press="onPressAssetApprovel">
+											<cells>
+												<Text text="{DOB>empId}"/>
+												<Text text="{DOB>assetId}"/>
+												<Text text="{DOB>AssetName}"/>
+												<Text text="{DOB>Tdate}"/>
+												<Text text="{DOB>Status}"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</IconTabFilter>
+							<IconTabFilter class="leftPadding" text="{i18n>LeavePageTimeSheet}">
+								<Table id="idTimeSheetTable" inset="false" items="{DOB>/TimeSheet}">
+									<infoToolbar>
+										<OverflowToolbar>
+											<Label text="{i18n>LeavePageTimesheet}"/>
+										</OverflowToolbar>
+									</infoToolbar>
+									<columns>
+										<Column width="12em">
+											<Text text="{i18n>LeavePageEmployeeId}"/>
+										</Column>
+										<Column minScreenWidth="Tablet" demandPopin="true">
+											<Text text="{i18n>LeavePageEmployeeName}"/>
+										</Column>
+										<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+											<Text text="{i18n>LeavePageTimeSheetDownload}"/>
+										</Column>
+										<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+											<Text text="{i18n>LeavePageTimesheetApprove}"/>
+										</Column>
+										<Column hAlign="End">
+											<Text text="{i18n>LeavePageTimesheetReject}"/>
+										</Column>
+									</columns>
+									<items >
+										<ColumnListItem type="Navigation">
+											<cells>
+												<Text text="{DOB>empId}"/>
+												<Text text="{DOB>empName}"/>
+												<Link href="{DOB>filePath}" text="{i18n>LeavePageTimeSheetDownload}"/>
+												<Button text="{i18n>LeavePageTimesheetApprove}" press="onPressTimeSheetApprovel"/>
+												<Button text="{i18n>LeavePageTimesheetReject}" press="onPressTimeSheetReject"/>
+											</cells>
+										</ColumnListItem>
+									</items>
+								</Table>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

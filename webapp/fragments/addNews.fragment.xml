@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="Birthdays" id="thismonthBirthdayListFragment" showHeader="false">
+		<f:SimpleForm id="idListForm">
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<Label text="EmpId" labelFor="input-a"/>
+					<Input id="idInputBrand" required="true" enabled="false" value="{DOB>EmpId}" width="50%"/>
+					<Label text="empName" labelFor="input-b" design="Bold"/>
+					<Input id="idInputName" editable="false" value="{DOB>/0/empName}" width="50%"/>
+					<Toolbar>
+						<Button type="Accept" text="Save" id="btnSave" press="onSave"/>
+					</Toolbar>
+				</l:content>
+			</l:VerticalLayout>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,40 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="RelievingEmployees" showHeader="false">
+		<f:SimpleForm>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<VBox>
+						<FlexBox>
+							<Label text="EmpId:" design="Bold"/>
+							<Text text="{DOB>/LeaveAction/0/empId}" class="sapUiMediumMarginBegin" width="100%"/>
+						</FlexBox>
+						<Label/>
+						<FlexBox>
+							<Label text="Reason:" design="Bold"/>
+							<Text text="{DOB>/LeaveAction/0/Reason}" class="sapUiMediumMarginBegin" width="100%"/>
+						</FlexBox>
+						<Label/>
+						<FlexBox>
+							<Label text="Fdate:" design="Bold"/>
+							<Text text="{DOB>/LeaveAction/0/Fdate}" class="sapUiMediumMarginBegin" width="100%"/>
+						</FlexBox>
+						<Label/>
+						<FlexBox>
+							<Label text="Tdate:" design="Bold"/>
+							<Text text="{DOB>/LeaveAction/0/Tdate}" class="sapUiMediumMarginBegin" width="100%"/>
+						</FlexBox>
+						<Label/>
+						<Toolbar>
+							<HBox width="100%" alignContent="Center" alignItems="Center" justifyContent="Center">
+								<Button type="Accept" text="Approve" class="sapUiMediumMarginEnd" press="onClickLeaveApprival"/>
+								<Button type="Reject" text="Reject" class="sapUiMediumMarginBegin" press="onClickLeaveReject"/>
+							</HBox>
+						</Toolbar>
+						<Button type="Back" width="100%" text="Cancel" press="onCloseFragmentLeaveAction"></Button>
+					</VBox>
+				</l:content>
+			</l:VerticalLayout>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>

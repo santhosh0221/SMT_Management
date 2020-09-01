@@ -1,0 +1,47 @@
+<mvc:View controllerName="MT.SMT_Managment.controller.Object" xmlns:layout="sap.ui.layout" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic">
+	<semantic:SemanticPage id="page" headerPinnable="true" toggleHeaderOnTitleClick="false" titleAreaShrinkRatio="1:1.6:1.6">
+		<semantic:titleHeading>
+			<Title text="Employee Details" level="H3"/>
+		</semantic:titleHeading>
+		<!--<semantic:titleContent >
+<Title textAlign="Center" text="Employee Details" level="H3"/>
+</semantic:titleContent>-->
+		<semantic:titleSnappedContent>
+			<Text text="Details Of {DOB>empName}"/>
+		</semantic:titleSnappedContent>
+		<semantic:headerContent>
+			<layout:HorizontalLayout allowWrapping="true">
+				<layout:VerticalLayout class="sapUiMediumMarginEnd">
+					<Avatar src="{DOB>image}"/>
+				</layout:VerticalLayout>
+				<layout:VerticalLayout class="sapUiMediumMarginEnd">
+					<ObjectAttribute title="Employee ID" text="{DOB>EmpId}"/>
+					<ObjectAttribute title="Employee Name" text="{DOB>empName}"/>
+				</layout:VerticalLayout>
+				<layout:VerticalLayout class="sapUiMediumMarginEnd">
+					<ObjectAttribute title="Phone Number" text="{DOB>phoneNumber}"/>
+					<ObjectAttribute title="Email address" text="{DOB>Email}"/>
+				</layout:VerticalLayout>
+			</layout:HorizontalLayout>
+		</semantic:headerContent>
+		<semantic:content>
+			<List headerText="Salary Account And Basic Details">
+				<DisplayListItem label="Designation" value="{DOB>Designation}"/>
+				<DisplayListItem label="Standard Days" value="{DOB>StandardDays}"/>
+				<DisplayListItem label="Worked Days" value="{DOB>WorkedDays}"/>
+				<DisplayListItem label="Night Shifts" value="{DOB>nightShift}"/>
+				<DisplayListItem label="Bank Name" value="{DOB>BankName}"/>
+				<DisplayListItem label="IFSC Code" value="{DOB>IFSCCode}"/>
+				<DisplayListItem label="PAN Card Number" value="{DOB>PANNo}"/>
+				<DisplayListItem label="Basic Salary" value="Rs {DOB>BasicSalary}"/>
+			</List>
+		</semantic:content>
+		<semantic:titleMainAction>
+			<semantic:TitleMainAction text="{DOB>Department}" enabled="false"/>
+		</semantic:titleMainAction>
+		<semantic:sendEmailAction>
+			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
+		</semantic:sendEmailAction>
+	</semantic:SemanticPage>
+</mvc:View>

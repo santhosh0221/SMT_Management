@@ -1,0 +1,250 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	controllerName="MT.SMT_Managment.controller.dashboardView" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f"
+	xmlns:card="sap.f.cards">
+	<App>
+		<pages >
+			<Page showHeader="false">
+				<Toolbar width="100%" height="1px"/>
+				<l:Grid defaultSpan="XL2 L2 M3 S12" class="sapUiMediumMarginTop sapUiLargeMarginEnd">
+					<l:content alignItems="Center" width="100%">
+						<VBox alignItems="Center">
+							<Avatar src="sap-icon://manager" displaySize="XL" backgroundColor="Accent6" press="onManagementCardClick"/>
+							<Text text="Manage Activity of Management" class="sapUiSmallMarginTop"/>
+						</VBox>
+						<VBox alignItems="Center">
+							<Avatar src="sap-icon://create-leave-request" displaySize="XL" backgroundColor="Accent7" press="onLeaveAsset"/>
+							<Text text="Leave and asset" class="sapUiSmallMarginTop"/>
+						</VBox>
+						<VBox alignItems="Center">
+							<Avatar src="sap-icon://employee-lookup" displaySize="XL" backgroundColor="Accent10" press="onDataBasePress"/>
+							<Text text="Employee Data base" class="sapUiSmallMarginTop"/>
+						</VBox>
+					</l:content>
+				</l:Grid>
+				<Toolbar width="100%" height="1px" class="sapULargeMarginTop"/>
+				<f:Card class="sapUiSmallMargin" width="26em">
+					<f:header>
+						<card:Header title="{i18n>totalNumberofEmployee}"
+							iconSrc="https://toppng.com/uploads/preview/roup-of-people-in-a-formation-free-icon-svg-psd-png-employee-engagement-stats-11563001272via6lcn5i3.png"/>
+					</f:header>
+					<f:content>
+						<ScrollContainer height="200px" width="100%" vertical="true" focusable="true">
+							<Table items="{DOB>/Employee}" width="100%">
+								<columns>
+									<Column>
+										<Text text="image"/>
+									</Column>
+									<Column>
+										<Text text="EmpId"/>
+									</Column>
+									<Column >
+										<Text text="empName"/>
+									</Column>
+									<Column>
+										<Text text="Department"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Navigation" press="empSalayaNavToFinance">
+										<cells>
+											<Avatar src="{DOB>image}" displaySize="S" showBorder="true"/>
+											<Label text="{DOB>EmpId}" class="sapUiSmallMarginEnd"/>
+											<Label text="{DOB>empName}" class="sapUiSmallMarginEnd"/>
+											<Label text="{DOB>Department}" class="sapUiSmallMarginEnd"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>
+					</f:content>
+				</f:Card>
+				<f:Card class="sapUiSmallMargin" width="26em">
+					<f:header>
+						<card:Header title="{i18n>totalNumberofEmployeePresent}" iconSrc="sap-icon://employee-approvals"/>
+					</f:header>
+					<f:content>
+						<ScrollContainer height="200px" width="100%" vertical="true" focusable="true">
+							<Table items="{DOB>/Employee}" width="100%">
+								<columns>
+									<Column>
+										<Text text="image"/>
+									</Column>
+									<Column>
+										<Text text="EmpId"/>
+									</Column>
+									<Column >
+										<Text text="empName"/>
+									</Column>
+									<Column>
+										<Text text="Department"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Navigation" press="Birthday">
+										<cells>
+											<Avatar src="{DOB>image}" displaySize="S" showBorder="true"/>
+											<Label text="{DOB>EmpId}" class="sapUiSmallMarginEnd"/>
+											<Label text="{DOB>empName}" class="sapUiSmallMarginEnd"/>
+											<Label text="{DOB>Department}" class="sapUiSmallMarginEnd"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>
+					</f:content>
+				</f:Card>
+				<f:Card class="sapUiSmallMargin" width="26em">
+					<f:header>
+						<card:Header title="{i18n>totalNumberofEmployeeRelieving}"
+							iconSrc="https://img.pngio.com/door-exit-leave-out-work-icon-leave-work-png-512_512.png"/>
+					</f:header>
+					<f:content>
+						<ScrollContainer height="200px" width="100%" vertical="true" focusable="true">
+							<Table id="relievingCardId" items="{DOB>/Relieving}" width="100%">
+								<columns>
+									<Column>
+										<Text text="image"/>
+									</Column>
+									<Column>
+										<Text text="Name"/>
+									</Column>
+									<Column width="8em">
+										<Text text="endDate"/>
+									</Column>
+									<Column>
+										<Text text="ATN"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Navigation" press="Birthday">
+										<cells>
+											<!--<Image src="{DOB>image}" width="2em" height="2em"/>-->
+											<Avatar src="{DOB>image}" displaySize="S" showBorder="true"/>
+											<Label text="{DOB>EmpId}"/>
+											<DatePicker value="{DOB>endDate}" editable="false"/>
+											<Button text="Add News" press="onClickRelievingButton"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>
+					</f:content>
+				</f:Card>
+				<f:Card class="sapUiSmallMargin" width="26em">
+					<f:header>
+						<card:Header title="{i18n>totalNumberofEmployeeanniversary}"
+							iconSrc="https://cdn.iconscout.com/icon/premium/png-512-thumb/first-year-anniversary-594871.png"/>
+					</f:header>
+					<f:content>
+						<ScrollContainer height="200px" width="100%" vertical="true" focusable="true">
+							<Table items="{DOB>/anualData}" width="100%">
+								<columns>
+									<Column>
+										<Text text="image"/>
+									</Column>
+									<Column>
+										<Text text="Name"/>
+									</Column>
+									<Column width="8em">
+										<Text text="startDate"/>
+									</Column>
+									<Column>
+										<Text text="ATN"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Navigation" press="Birthday">
+										<cells>
+											<!--<Image src="{DOB>image}" width="2em" height="2em"/>-->
+											<Avatar src="{DOB>image}" displaySize="S" showBorder="true"/>
+											<Label text="{DOB>EmpId}"/>
+											<DatePicker value="{DOB>startDate}" editable="false"/>
+											<Button text="Add to News" press="onClickRelievingButton"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>
+					</f:content>
+				</f:Card>
+				<f:Card class="sapUiSmallMargin" width="26em">
+					<f:header>
+						<card:Header title="{i18n>totalNumberofEmployeeBirthdays}"
+							iconSrc="https://www.pinclipart.com/picdir/middle/0-7698_birthday-cake-icon-free-png-clipart-computer-icons.png"/>
+					</f:header>
+					<f:content>
+						<ScrollContainer height="200px" width="100%" vertical="true" focusable="true">
+							<Table id="birthdayCardId" items="{DOB>/birthDay}" width="100%">
+								<columns>
+									<Column>
+										<Text text="image"/>
+									</Column>
+									<Column>
+										<Text text="Name"/>
+									</Column>
+									<Column width="8em">
+										<Text text="DOB"/>
+									</Column>
+									<Column>
+										<Text text="ATN"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Navigation" press="Birthday">
+										<cells>
+											<!--<Image src="{DOB>image}" width="2em" height="2em"/>-->
+											<Avatar src="{DOB>image}" displaySize="S" showBorder="true"/>
+											<Label text="{DOB>EmpId}"/>
+											<DatePicker value="{DOB>date}" editable="false"/>
+											<Button text="Add to News" press="onClickRelievingButton"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>
+					</f:content>
+				</f:Card>
+				<f:Card class="sapUiSmallMargin" width="26em">
+					<f:header>
+						<card:Header title="{i18n>Events}"
+							iconSrc="https://lh3.googleusercontent.com/proxy/DQofxzczEaXPh5QWZpNXUbckxjCXEj9jU9Y_0svLKceulpLBi1ZwmV6KTipjj2qxPpsKWzZbBX3sCdlAidset1H6i2aFSF-P72ZHxv3ldXb4Kvq2iIdVhe4oSIpzQoYGg-P1O7C1m4P8y-K-uxnLnYvBMfXz8Gp6XHwvPw"/>
+					</f:header>
+					<f:content>
+						<ScrollContainer height="200px" width="100%" vertical="true" focusable="true">
+							<Table items="{DOB>/Events}" width="100%">
+								<columns>
+									<Column>
+										<Text text="EmpId"/>
+									</Column>
+									<Column>
+										<Text text="Name"/>
+									</Column>
+									<Column width="8em">
+										<Text text="Date"/>
+									</Column>
+									<Column>
+										<Text text="Enent Name"/>
+									</Column>
+									<Column>
+										<Text text="Delete Enent"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem type="Navigation" press="Birthday">
+										<cells>
+											<Label text="{DOB>EmpId}"/>
+											<Label text="{DOB>name}"/>
+											<DatePicker value="{DOB>date}" editable="false"/>
+											<Label text="{DOB>eveName}"/>
+											<Button text="delete" press="onClickdeleteEvent"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+						</ScrollContainer>
+					</f:content>
+				</f:Card>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

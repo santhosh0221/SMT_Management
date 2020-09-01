@@ -1,0 +1,378 @@
+{
+	"Employee": [{
+			"EmpId": 100,
+			"empName": "Abhilasha",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/Anime-Boys-Drawception-Profile.jpg",
+			"phoneNumber": 9743350379,
+			"Email": "abhiappaji1991@gmail.com",
+			"BasicSalary": 22000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "SAP UI5 Consultant",
+			"Department": "SAP UI5",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AZSPA3513F",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "HDFC0002129",
+			"totalSalary": "",
+			"Month": "Janaury",
+			"Year": "2019",
+			"startDate": "12-09-2018",
+			"endDate": "12-09-2021",
+			"date": "14-07-1997"
+
+		}, {
+			"EmpId": 101,
+			"empName": "Virendra",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/Pin-by-ian-on-profile-pics-in-2019-Cute-anime-boy-.jpg",
+			"phoneNumber": 7657456784,
+			"Email": "codingviru@gmail.com",
+			"BasicSalary": 18000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "SAP UI5 Consultant",
+			"Department": "SAP UI5",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AHJIG6745G",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "HDFC0002129",
+			"totalSalary": "",
+			"Month": "October",
+			"Year": "2017",
+			"startDate": "17-01-2018",
+			"endDate": "17-01-2021",
+			"date": "20-08-1994"
+
+		}, {
+			"EmpId": 102,
+			"empName": "ShivRaj",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/228-Best-Anime-Profile-Pictures-images-in-2019-Anime-.jpg",
+			"phoneNumber": 9845374568,
+			"Email": "Shivraj@gmail.com",
+			"BasicSalary": 22000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "SAP UI5 Consultant",
+			"Department": "SAP UI5",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AGHDF7564H",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "",
+			"totalSalary": "HDFC0002129",
+			"Month": "September",
+			"Year": "2019",
+			"startDate": "29-04-2019",
+			"endDate": "29-04-2022",
+			"date": "25-01-1991"
+
+		}, {
+			"EmpId": 103,
+			"empName": "Manjunath",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/204-images-about-Matching-profile-pictures-dTdd-on-We-.jpg",
+			"phoneNumber": 8764576897,
+			"Email": "Manjunath@gmail.com",
+			"BasicSalary": 25000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "SAP UI5 Consultant",
+			"Department": "SAP UI5",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AVGSY8765J",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "HDFC0002129",
+			"totalSalary": "",
+			"Month": "June",
+			"Year": "2018",
+			"startDate": "08-08-2018",
+			"endDate": "08-07-2021",
+			"date": "01-04-1995"
+
+		}, {
+			"EmpId": 200,
+			"empName": "Supriya",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/Anime-BoydL-otaku953-Instagram-Profile-Toopics.jpg",
+			"phoneNumber": 8904445709,
+			"Email": "Supriya@gmailcom",
+			"BasicSalary": 18000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "ABAP Consultant",
+			"Department": "SAP ABAP",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AHSGY6754Y",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "",
+			"totalSalary": "HDFC0002129",
+			"Month": "March",
+			"Year": "2017",
+			"startDate": "13-12-2016",
+			"endDate": "13-12-2020",
+			"date": "19-08-1992"
+
+		},
+
+		{
+			"EmpId": 201,
+			"empName": "Sreya",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/AAC-Profile-Challenge-Anime-Amino.jpg",
+			"phoneNumber": 9489955002,
+			"Email": "Sreya@gmail.com",
+			"BasicSalary": 20000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "ABAP Consultant",
+			"Department": "SAP ABAP",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AJDHY7654H",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "HDFC0002129",
+			"totalSalary": "",
+			"Month": "March",
+			"Year": "2018",
+			"startDate": "06-09-2016",
+			"endDate": "06-09-2020",
+			"date": "29-08-1991"
+
+		}, {
+			"EmpId": 202,
+			"empName": "Karthik",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/Boy-Forum-Avatar-Profile-Photo-ID-165124-Avatar-Abyss.jpg",
+			"phoneNumber": 9449610436,
+			"Email": "Karthik@gmail.com",
+			"BasicSalary": 23000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "ABAP Consultant",
+			"Department": "SAP ABAP",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AADSR4563U",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "HDFC0002129",
+			"totalSalary": "",
+			"Month": "Janaury",
+			"Year": "2017",
+			"startDate": "07-09-2016",
+			"endDate": "07-09-2020",
+			"date": "10-06-1990"
+
+		}, {
+			"EmpId": 203,
+			"empName": "Niveditha",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/Anime-Boys-Drawception-Profile.jpg",
+			"phoneNumber": 7685645678,
+			"Email": "Niveditha@gmail.com",
+			"BasicSalary": 18000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 24,
+			"LOP": 0,
+			"nightShift": 4,
+			"Designation": "ABAP Consultant",
+			"Department": "SAP ABAP",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AHSGY6754Y",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "",
+			"totalSalary": "HDFC0002129",
+			"Month": "Janaury",
+			"Year": "2019",
+			"startDate": "12-12-2016",
+			"endDate": "12-12-2020",
+			"date": "12-09-1993"
+
+		}, {
+			"EmpId": 300,
+			"empName": "Surya",
+			"image": "https://cutewallpaper.org/21/anime-profile-pictures-boy/204-images-about-Matching-profile-pictures-dTdd-on-We-.jpg",
+			"phoneNumber": 7684567589,
+			"Email": "Surya@gmailcom",
+			"BasicSalary": 27000,
+			"Allowance": 2000,
+			"StandardDays": 31,
+			"WorkedDays": 28,
+			"LOP": 1,
+			"nightShift": 3,
+			"Designation": "HR Manager",
+			"Department": "HR",
+			"BankName": "HDFC",
+			"BankACNO": "0587474646554",
+			"PANNo": "AHDSK6754J",
+			"LOPDeduction": "",
+			"NightShiftPay": "",
+			"IFSCCode": "HDFC0002129",
+			"totalSalary": "",
+			"Month": "February",
+			"Year": "2020",
+			"startDate": "12-12-2017",
+			"endDate": "12-12-2021",
+			"date": "13-09-1993"
+		}
+	],
+	"notificationDatas": [{
+		"EmpId": "100",
+		"File": "",
+		"requestFile": "Time Sheet",
+		"empName": "Santosh"
+	}, {
+		"EmpId": "101",
+		"File": "",
+		"requestFile": "TimeSheet",
+		"empName": "Rahul"
+	}, {
+		"EmpId": "200",
+		"File": "",
+		"requestFile": "SSCL Marks Card",
+		"empName": "Sunil"
+	}, {
+		"EmpId": "201",
+		"File": "",
+		"requestFile": "Pay Slip",
+		"empName": "Manjunath M"
+	}, {
+		"EmpId": "203",
+		"File": "",
+		"requestFile": "Pay Slip",
+		"empName": "Baswaraj"
+	}],
+	"Leave": [{
+		"empId": "102",
+		"Reason": "Sick",
+		"Fdate": "12-07-2020",
+		"Tdate": "12-07-2020",
+		"Status": "approved"
+	}, {
+		"empId": "103",
+		"Reason": "Sick",
+		"Fdate": "17-06-2020",
+		"Tdate": "18-06-2020",
+		"Status": "approved"
+	}, {
+		"empId": "201",
+		"Reason": "Personal Work",
+		"Fdate": "17-06-2020",
+		"Tdate": "27-06-2020",
+		"Status": "Rejected"
+	}, {
+		"empId": "200",
+		"Reason": "Sick",
+		"Fdate": "18-05-2020",
+		"Tdate": "22-05-2020",
+		"Status": "Rejected"
+	}, {
+		"empId": "400",
+		"Reason": "Marrage",
+		"Fdate": "18-05-2020",
+		"Tdate": "18-06-2020",
+		"Status": "approved"
+	}, {
+		"empId": "201",
+		"Reason": "Marrage",
+		"Fdate": "29-08-2020",
+		"Tdate": "29-09-2020",
+		"Status": "Pending"
+	}, {
+		"empId": "100",
+		"Reason": "Personal Work",
+		"Fdate": "25-08-2020",
+		"Tdate": "26-08-2020",
+		"Status": "Pending"
+	}, {
+		"empId": "102",
+		"Reason": "Sick",
+		"Fdate": "22-08-2020",
+		"Tdate": "22-08-2020",
+		"Status": "Pending"
+	}],
+	"Asset": [{
+		"empId": "100",
+		"assetId": "asset01",
+		"AssetName": "Portable HardDrive",
+		"Tdate": "29-07-2020",
+		"Status": "Resolved"
+	}, {
+		"empId": "200",
+		"assetId": "asset02",
+		"AssetName": "Usb Connector",
+		"Tdate": "09-07-2020",
+		"Status": "Resolved"
+	}, {
+		"empId": "300",
+		"assetId": "asset03",
+		"AssetName": "Laptop",
+		"Tdate": "21-06-2020",
+		"Status": "Resolved"
+	}, {
+		"empId": "400",
+		"assetId": "asset04",
+		"AssetName": "Charger",
+		"Tdate": "19-08-2020",
+		"Status": "Resolved"
+	}, {
+		"empId": "201",
+		"assetId": "asset05",
+		"AssetName": "Laptop Camara",
+		"Tdate": "21-08-2020",
+		"Status": "Resolved"
+	}, {
+		"empId": "Emp09",
+		"assetId": "asset06",
+		"AssetName": "USB connector",
+		"Tdate": "19-08-2020",
+		"Status": "Pending"
+	}, {
+		"empId": "102",
+		"assetId": "asset07",
+		"AssetName": "Laptop Display",
+		"Tdate": "20-08-2020",
+		"Status": "Pending"
+	}, {
+		"empId": "101",
+		"assetId": "asset08",
+		"AssetName": "Touch pad",
+		"Tdate": "18-08-2020",
+		"Status": "Pending"
+	}, {
+		"empId": "100",
+		"assetId": "asset09",
+		"AssetName": "Touch pad",
+		"Tdate": "17-08-2020",
+		"Status": "Pending"
+	}]
+}

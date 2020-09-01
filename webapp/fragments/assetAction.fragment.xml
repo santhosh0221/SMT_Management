@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="RelievingEmployees" showHeader="false" id="dialog">
+		<f:SimpleForm>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<VBox>
+						<FlexBox>
+							<Label text="EmpId:" design="Bold"/>
+							<Text id="assetAssetIdId" class="sapUiMediumMarginBegin" width="100%"/>
+						</FlexBox>
+						<Label/>
+						<FlexBox>
+							<Label text="Asset:" design="Bold"/>
+							<Text id="assetAssetNameId" class="sapUiMediumMarginBegin" width="100%"/>
+						</FlexBox>
+						<Label/>
+						<FlexBox>
+							<Label text="asset date:" design="Bold"/>
+							<Text id="assetAsseDateeId" class="sapUiMediumMarginBegin" width="100%"/>
+						</FlexBox>
+						<Label/>
+						<Toolbar>
+							<HBox width="100%" alignContent="Center" alignItems="Center" justifyContent="Center">
+								<Label text="Barcode value"/>
+								<Input id="scannedValue" placeholder="{= ${device>/barcodeScanEnabled} ? 'Use scan button to enter barcode' : 'Enter barcode manually' }"
+									editable="{= !${device>/barcodeScanEnabled} }"/>
+								<Button icon="sap-icon://bar-code" text="Scan" tooltip="Scan barcode" visible="{device>/barcodeScanEnabled}" press="onScanForValue">
+									<layoutData>
+										<l:GridData span="L2 M2"/>
+									</layoutData>
+								</Button>
+								<!--<Button type="Accept" text="Approve" class="sapUiMediumMarginEnd" press="onClickAssetApprival"/>-->
+							</HBox>
+						</Toolbar>
+						<HBox width="100%" alignContent="Center" alignItems="Center" justifyContent="Center">
+							<Button type="Accept" text="Approve" class="sapUiMediumMarginEnd" press="onAsseteApproval"/>
+							<Button type="Back" width="100%" text="Cancel" press="onCloseFragmentAsseteAction"></Button>
+						</HBox>
+					</VBox>
+				</l:content>
+			</l:VerticalLayout>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>

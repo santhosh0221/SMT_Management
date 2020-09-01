@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="Enter details" id="fileUploader2">
+		<f:SimpleForm>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<VBox>
+						<Label text="EmpId:"/>
+						<Input id="empAddFId" required="true" width="100%" liveChange="onEmpId" editable="false"/>
+						<Label text="firstName:"/>
+						<Input id="fNameFId" required="true" width="100%" liveChange="onFname"/>
+						<Label id="lableName" text="LastName:"/>
+						<Input id="lNameFId" required="true" width="100%" liveChange="onLname"/>
+						<Label text="Department:"/>
+						<Input id="empAdddepFId" required="true" width="100%" liveChange="onDepart"/>
+						<Label text="Position:"/>
+						<Input id="empAddposFId" required="true" width="100%" liveChange="onPos"/>
+						<Label text="Email:"/>
+						<Input id="empAddEmailId" required="true" width="100%" change="onEmail"/>
+						<Label text="Date Of Birth:"/>
+						<DatePicker id="empAddDOBId" placeholder="Enter Date ..." navigate="handleChangeDOB" class="sapUiSmallMarginBottom"/>
+						<Label text="Joining date:"/>
+						<DatePicker id="empAddStareId" placeholder="Enter Date ..." change="handleChangeStartDate" class="sapUiSmallMarginBottom"/>
+						<Label text="Releaving date:"/>
+						<DatePicker id="empAddEndId" placeholder="Enter Date ..." change="onchangeLeavingDate" editable="true" class="sapUiSmallMarginBottom"/>
+						<Label text="Password:"/>
+						<Input id="empAddPassId" required="true" width="100%" editable="false"/>
+						<Toolbar>
+							<Button text="Add" press="onSave" id="btnVeg"></Button>
+							<Button type="Reject" text="Cancel" id="btnSaveFood" press="onCloseFragmentAddEmp"></Button>
+						</Toolbar>
+					</VBox>
+				</l:content>
+			</l:VerticalLayout>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>

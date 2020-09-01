@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified">
+	<Dialog title="RelievingEmployees" id="RelievingEmployeListFragment" showHeader="false">
+		<f:SimpleForm>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<VBox>
+						<Label text="EmpId:"/>
+						<Input id="addEventsEmpFragementId" value="{DOB>/Event/0/EmpId}" required="true" width="100%" editable="false"/>
+						<Label text="Name:"/>
+						<Input id="addEventsEmpFragementName" value="{DOB>/Event/0/empName}" required="true" width="100%" liveChange="onEName"/>
+						<Label text="Date:"/>
+						<DatePicker id="addEventsEmpFragementDate" value="{DOB>/Event/0/endDate}" change="managementEventDate" editable="false"/>
+						<Label text="Event Name:"/>
+						<Input id="addEventsEmpFragementEvent" required="true" width="100%"/>
+						<Toolbar>
+							<Button text="Add" press="onClickAddEvents"></Button>
+							<Button type="Reject" text="Cancel" press="onCloseFragmentAddEmp"></Button>
+						</Toolbar>
+					</VBox>
+				</l:content>
+			</l:VerticalLayout>
+		</f:SimpleForm>
+	</Dialog>
+</core:FragmentDefinition>

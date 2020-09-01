@@ -1,0 +1,34 @@
+{
+    "application": {
+        "id": "",
+        "title": "MT.SMT_Managment.SMT_Management",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#SMT_Management-Display",
+        "navigationComponentName": "MT.SMT_Managment",
+        "intentSemanticObject": "SMT_Management",
+        "intentAction": "Display",
+        "html5ApplicationName": "smtmanagement2",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "b8423ac0-9afa-4ff1-81a4-e441a091ee3a"
+        ],
+        "contentPackages": [
+            "9a56a34a-7581-4665-a67b-a738831c396c"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "searchKeywords": "Title,Subtitle",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
