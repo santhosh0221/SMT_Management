@@ -3,7 +3,8 @@
 	<ResponsivePopover title="{i18n>Notifications}" id="fileUploader1" contentWidth="200px" placement="Bottom">
 		<content>
 			<List items="{DOB>/notificationDatas}" class="notification">
-				<NotificationListItem title="{DOB>EmpId}" description="{DOB>requestFile}" authorName="{DOB>empName}" press="onNotificationTimeSheetPress"/>
+				<NotificationListItem title="{DOB>EmpId}" description="{DOB>requestFile}" authorName="{DOB>empName}" press="onNotificationTimeSheetPress"
+					showCloseButton="false"/>
 			</List>
 		</content>
 	</ResponsivePopover>

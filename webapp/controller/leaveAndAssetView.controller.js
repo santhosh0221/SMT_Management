@@ -141,6 +141,7 @@ sap.ui.define([
 			this.assetActionFragment.close();
 		},
 		onPressTimeSheetReject: function (oEvent) {
+
 			var dltApprovedTimesheetEmployeeObject = oEvent.getSource().getBindingContext("DOB").getObject();
 			var oModelTimeSheet = this.getOwnerComponent().getModel("DOB").getProperty("/TimeSheet");
 			var dFlag;
@@ -151,13 +152,15 @@ sap.ui.define([
 				onClose: function (sButton) {
 					if (sButton === MessageBox.Action.OK) {
 						// Do something
-						// debugger;
+						debugger;
 						for (var i = 0; i < oModelTimeSheet.length; i++) {
-							if (oModelTimeSheet[i].EmpId == dltApprovedTimesheetEmployeeObject.EmpId)
+							if (oModelTimeSheet[i].empId == dltApprovedTimesheetEmployeeObject.empId) {
 								oModelTimeSheet.splice(i, 1);
-							// dFlag = 1;
+								// dFlag = 1;
 
-							that.getOwnerComponent().getModel("DOB").setProperty("/TimeSheet", oModelTimeSheet);
+								that.getOwnerComponent().getModel("DOB").setProperty("/TimeSheet", oModelTimeSheet);
+							}
+
 						}
 					} else if (sButton === MessageBox.Action.CANCEL) {
 						// Do something

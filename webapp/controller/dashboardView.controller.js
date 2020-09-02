@@ -20,7 +20,7 @@ sap.ui.define([
 
 		},
 		oNloadOfView: function () {
-			debugger;
+			// debugger;
 			var DOB = this.getOwnerComponent().getModel("DOB").getProperty("/Employee");
 
 			var birthDay = [];
@@ -51,6 +51,23 @@ sap.ui.define([
 
 			this.getOwnerComponent().getModel("DOB").setProperty("/birthDay", birthDay);
 
+		},
+		onSearchEmployeeCard: function (oEvent) {
+			var search = oEvent.getParameter("newValue");
+			var oFilterName = new sap.ui.model.Filter(
+				"empName",
+				sap.ui.model.FilterOperator.Contains,
+				search);
+
+			var oFilter = new sap.ui.model.Filter({
+				// filters: [oFilterName, oFilterId],
+				filters: [oFilterName],
+				and: false
+			});
+			var aFilter = [oFilter];
+			// var aFilterId = [oFilterId];
+			var oList = this.getView().byId("totalEmpTable");
+			oList.getBinding("items").filter(aFilter);
 		},
 		// empSalayaNavToFinance: function (oEvent) {
 		// 	debugger;

@@ -23,13 +23,14 @@
 				</l:Grid>
 				<Toolbar width="100%" height="1px" class="sapULargeMarginTop"/>
 				<f:Card class="sapUiSmallMargin" width="26em">
-					<f:header>
+					<f:header height="1em">
 						<card:Header title="{i18n>totalNumberofEmployee}"
 							iconSrc="https://toppng.com/uploads/preview/roup-of-people-in-a-formation-free-icon-svg-psd-png-employee-engagement-stats-11563001272via6lcn5i3.png"/>
 					</f:header>
 					<f:content>
 						<ScrollContainer height="200px" width="100%" vertical="true" focusable="true">
-							<Table items="{DOB>/Employee}" width="100%">
+							<SearchField liveChange="onSearchEmployeeCard" class="stickyToolbar" placeholder="Search Employee by Name" width="100%"/>
+							<Table id="totalEmpTable" items="{DOB>/Employee}" width="100%" sticky="HeaderToolbar,InfoToolbar,ColumnHeaders">
 								<columns>
 									<Column>
 										<Text text="image"/>
