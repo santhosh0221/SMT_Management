@@ -1,0 +1,10 @@
+.stickyToolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 101;
+}
+
+.sapFCardHeader .sapFCard .heightOfCards {
+    padding: -1rem;
+}

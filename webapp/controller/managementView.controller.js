@@ -97,7 +97,7 @@ sap.ui.define([
 			}
 		},
 		onRequestFileSend: function () {
-			debugger;
+			// debugger;
 
 			if (this.validateFileInput()) {
 				var oModelRequests = this.getOwnerComponent().getModel("DOB").getProperty("/notificationDatas");
@@ -111,10 +111,11 @@ sap.ui.define([
 				};
 				oModelTimeSheet.push(obj);
 				this.getOwnerComponent().getModel("DOB").setProperty("/TimeSheet", oModelTimeSheet);
-
+				debugger;
 				for (var i = 0; i < oModelRequests.length; i++) {
 					if (oModelRequests[i].EmpId == employeeId) {
-						oModelRequests[i].File = this.filePath;
+						oModelRequests.splice(i, 1);
+						this.getOwnerComponent().getModel("DOB").setProperty("/notificationDatas", oModelRequests);
 					}
 				}
 				this.RequestFileFragment.close();
